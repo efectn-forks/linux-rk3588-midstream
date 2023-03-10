@@ -85,7 +85,7 @@
 		vin-supply = <&avcc_1v8_s0>;
 	};
 
-	es8388_sound: es8388-sound {
+	/*es8388_sound: es8388-sound {
 		status = "okay";
 		compatible = "rockchip,multicodecs-card";
 		rockchip,card-name = "rockchip-es8388";
@@ -114,7 +114,7 @@
 			linux,code = <KEY_PLAYPAUSE>;
 			press-threshold-microvolt = <2000>;
 		};
-	};
+	};*/
 
 	wireless_bluetooth: wireless-bluetooth {
 		compatible = "bluetooth-platdata";

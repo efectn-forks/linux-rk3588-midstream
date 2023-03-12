@@ -498,11 +498,6 @@
 	status = "okay";
 };
 
-
-&dp0_sound{
-	status = "okay";
-};
-
 &i2c6 {
 	status = "okay";
 	pinctrl-names = "default";

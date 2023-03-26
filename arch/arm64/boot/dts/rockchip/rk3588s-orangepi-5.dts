@@ -12,7 +12,6 @@
 	compatible = "rockchip,rk3588s-orangepi-5", "rockchip,rk3588s";
 
 	aliases {
-		//mmc1 = &sdhci;
 		serial2 = &uart2;
 	};
 
@@ -155,17 +154,6 @@
 			rockchip,pins = <0 RK_PD0 RK_FUNC_GPIO &pcfg_pull_up>;
 		};
 	};
-};
-
-&sdhci {
-	bus-width = <8>;
-	no-sdio;
-	no-sd;
-	non-removable;
-	max-frequency = <200000000>;
-	mmc-hs400-1_8v;
-	mmc-hs400-enhanced-strobe;
-	status = "disabled";
 };
 
 &sdmmc {

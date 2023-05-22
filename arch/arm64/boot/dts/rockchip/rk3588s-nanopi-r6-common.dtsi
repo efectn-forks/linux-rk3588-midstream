@@ -353,39 +353,6 @@ NPU is not working on midstream kernel
 	};
 };
 
-/*
-&pwm3 {
-	compatible = "rockchip,remotectl-pwm";
-	pinctrl-names = "default";
-	pinctrl-0 = <&pwm3m0_pins>;
-	remote_pwm_id = <3>;
-	handle_cpu_id = <1>;
-	remote_support_psci = <0>;
-	status = "okay";
-
-	ir_key1 {
-		rockchip,usercode = <0xc43b>;
-		/* /system/usr/keylayout/Generic.kl */
-		rockchip,key_table =
-			<0xff	KEY_POWER>,
-			<0xef	KEY_LEFT>,
-			<0xed	KEY_RIGHT>,
-			<0xf2	KEY_UP>,
-			<0xea	KEY_DOWN>,
-			<0xee	KEY_ENTER>,
-			<0xe9	KEY_MUTE>,
-			<0xf1	KEY_VOLUMEDOWN>,
-			<0xf3	KEY_VOLUMEUP>,
-			<0xae	KEY_MENU>,
-			<0xeb	172>,
-			<0xaf	KEY_BACK>,
-			<0xf7	204>,
-			<0xe5	KEY_SYSRQ>,
-			<0xf5	580>;
-	};
-};
-*/
-
 &rga3_core0 {
 	status = "okay";
 };

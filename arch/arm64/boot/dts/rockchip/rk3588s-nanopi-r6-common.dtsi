@@ -380,22 +380,6 @@ NPU is not working on midstream kernel
 	};
 };
 
-&rockchip_suspend {
-	status = "okay";
-	rockchip,sleep-debug-en = <1>;
-	rockchip,sleep-mode-config = <
-		(0
-		| RKPM_SLP_ARMOFF_DDRPD
-		)
-	>;
-	rockchip,wakeup-config = <
-		(0
-		| RKPM_CPU0_WKUP_EN
-		| RKPM_GPIO_WKUP_EN
-		)
-	>;
-};
-
 &route_hdmi0 {
 	status = "okay";
 	connect = <&vp0_out_hdmi0>;

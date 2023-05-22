@@ -110,14 +110,6 @@
 	};
 };
 
-&av1d {
-	status = "okay";
-};
-
-&av1d_mmu {
-	status = "okay";
-};
-
 &combphy0_ps {
 	status = "okay";
 };
@@ -331,62 +323,6 @@ NPU is not working on midstream kernel
 	status = "disabled";
 };
 
-&iep {
-	status = "okay";
-};
-
-&iep_mmu {
-	status = "okay";
-};
-
-&jpegd {
-	status = "okay";
-};
-
-&jpegd_mmu {
-	status = "okay";
-};
-
-&jpege_ccu {
-	status = "okay";
-};
-
-&jpege0 {
-	status = "okay";
-};
-
-&jpege0_mmu {
-	status = "okay";
-};
-
-&jpege1 {
-	status = "okay";
-};
-
-&jpege1_mmu {
-	status = "okay";
-};
-
-&jpege2 {
-	status = "okay";
-};
-
-&jpege2_mmu {
-	status = "okay";
-};
-
-&jpege3 {
-	status = "okay";
-};
-
-&jpege3_mmu {
-	status = "okay";
-};
-
-&mpp_srv {
-	status = "okay";
-};
-
 &pcie2x1l1 {
 	reset-gpios = <&gpio1 RK_PA7 GPIO_ACTIVE_HIGH>;
 	rockchip,init-delay-ms = <100>;
@@ -488,46 +424,6 @@ NPU is not working on midstream kernel
 	status = "okay";
 };
 */
-
-&rkvdec_ccu {
-	status = "okay";
-};
-
-&rkvdec0 {
-	status = "okay";
-};
-
-&rkvdec0_mmu {
-	status = "okay";
-};
-
-&rkvdec1 {
-	status = "okay";
-};
-
-&rkvdec1_mmu {
-	status = "okay";
-};
-
-&rkvenc_ccu {
-	status = "okay";
-};
-
-&rkvenc0 {
-	status = "okay";
-};
-
-&rkvenc0_mmu {
-	status = "okay";
-};
-
-&rkvenc1 {
-	status = "okay";
-};
-
-&rkvenc1_mmu {
-	status = "okay";
-};
 
 &avcc_1v8_s0 {
 	regulator-state-mem {
@@ -648,14 +544,6 @@ NPU is not working on midstream kernel
 
 &usbhost_dwc3_0 {
 	status = "disabled";
-};
-
-&vdpu {
-	status = "okay";
-};
-
-&vdpu_mmu {
-	status = "okay";
 };
 
 &vop {

@@ -18,20 +18,6 @@
 		ethernet0 = &r8125_u25;
 	};
 
-	gpio_keys: gpio-keys {
-		compatible = "gpio-keys";
-		pinctrl-names = "default";
-		pinctrl-0 = <&key1_pin>;
-
-		button@1 {
-			debounce-interval = <50>;
-			gpios = <&gpio1 RK_PC0 GPIO_ACTIVE_LOW>;
-			label = "K1";
-			linux,code = <BTN_1>;
-			wakeup-source;
-		};
-	};
-
 	gpio_leds: gpio-leds {
 		compatible = "gpio-leds";
 
